@@ -1,0 +1,251 @@
+body{
+    
+    font-family:cursive;
+    margin: 0;
+}
+a:hover{
+    color: red;
+}
+.photos >img{
+    width: 100%;
+    height:600px;
+}
+#arrow{
+    z-index: 999999;
+   position: absolute;
+   position: fixed;
+   bottom: 10px;
+   right: 10px;
+   text-decoration: none;
+   border: 1px solid rgb(128, 128, 241);
+   border-radius: 10px;
+   background-color: rgb(82, 187, 236);
+   opacity: 0.5;
+}
+#arrow a:hover{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.logo_menu{
+    display: flex;
+    flex-wrap: nowrap;
+    background-image:linear-gradient(0,white,rgb(12, 12, 12));
+    z-index: 9999;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+.logo_menu >div{
+    width: 48%;
+}
+#logo_main{
+    padding: 5px 10px;
+}
+.menu_main{
+display: flex;
+flex-wrap: nowrap;
+justify-content: flex-end;
+}
+.menu_main >li{
+    text-align: end;
+    list-style-type: none;
+}
+.menu_main >li >a{
+    list-style-type: none;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 20px;
+}
+.menu_main >li >a:hover{
+    color: white;
+}
+#slogan{
+    position:relative;
+}
+#img_slogan{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.slogan{
+    width: 100%;
+    position:absolute;
+    top: 450px;
+    text-align: center;
+}
+.slogan >h1{
+    color: wheat;
+}
+.slogan >p{
+    
+    font-size: 20px;
+    color: darkorange;
+}
+#introduct{
+    padding: 30px ;
+    text-align: center;
+    background-color: white;
+}
+.introduct_ip12promax{
+    display: flex;
+    background-color: black;
+    color:white ;
+    width: 100%;
+}
+.introduct_ip12promax >div{
+    width: 48%;
+}
+.text{
+    padding-top: 10px;
+}
+.text_p{
+    color: teal;
+}
+#img12promax{
+    bottom: 10px;
+}
+#buyId{
+    display: flex;
+}
+#buyId >p >a{
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.introduct_ip12{
+    text-align: center;
+}
+.introduct_ip12 a{
+    text-decoration: none;
+}
+
+#introduct_ip12_a {
+    background-color: rgb(136, 136, 224);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+/*------something------*/
+.something{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.something >div{
+    width: 49%;
+}
+.something >div >img{
+    width: 100%;
+}
+.product1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 49%;
+    margin: 5px;
+}
+.product{
+    text-align: center;
+    width: 49%;
+}
+.something h1{
+    font-size: 50px;
+}
+.something a{
+    margin-left: 10px;
+    text-decoration: none;
+}
+/*-------Contact------*/
+.information{
+    background-image: linear-gradient(0, rgb(173, 149, 149), rgba(105, 29, 29, 0.966));
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    width: 100%;
+    
+}
+.information >div{
+    margin-left: 10px;
+    width: 24%;
+}
+#support >a{
+    text-decoration: none;
+}
+map >p{
+    text-align: center;
+}
+#map{
+    width: 24%;
+}
+#map iframe{
+    
+   width: 100%;
+   height: 215px;
+}
+.title_infomation{
+    
+    border-bottom: 2px solid black;
+}
+#end{
+    background-color: black;
+    color:red;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+    #time{
+        display: none;
+    }
+    .information >div{
+        margin-left: 20px;
+        width: 32%;
+    }
+    #map iframe{
+    
+        width: 100%;
+        height: 200px;;
+     }
+     .introduct_ip12promax{
+        display: none;
+    }
+    .introduct_ip12{
+        background-image: linear-gradient(0, white,black);
+    }
+    .introduct_ip12 >div >h1{
+        color: white;
+    }
+   
+}
+@media screen and (max-width: 600px) {
+    .something >div{
+        width: 99%;
+    }
+    #time{
+        display: none;
+    }
+    .information >div{
+        margin-left: 10px;
+        width: 32%;
+    }
+    #map iframe{
+    
+        width: 100%;
+        height: 200px;;
+     }
+     .introduct_ip12promax{
+         display: none;
+     }
+     .introduct_ip12{
+         background-image: linear-gradient(0, white,black);
+     }
+     .introduct_ip12 >div >h1{
+         color: white;
+     }
+    
+}  
+
+ 

@@ -128,6 +128,9 @@ justify-content: flex-end;
     padding: 5px 20px;
     border-radius: 20px;
 }
+#all_ip12{
+    width: 100%;
+}
 /*------something------*/
 .something{
     display: flex;
@@ -218,6 +221,11 @@ map >p{
     .introduct_ip12 >div >h1{
         color: white;
     }
+    .introduct_ip12 >div >h3{
+        color: rgb(134, 21, 21);
+        padding-top: 15px;
+    }
+    
    
 }
 @media screen and (max-width: 600px) {
@@ -245,6 +253,10 @@ map >p{
      .introduct_ip12 >div >h1{
          color: white;
      }
+     .introduct_ip12 >div >h3{
+        color: rgb(134, 21, 21);
+        padding-top: 15px;
+    }
     
 }  
 

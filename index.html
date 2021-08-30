@@ -44,6 +44,31 @@
             }
         }
         setInterval(changeImage,700);
+        
+        function enter(){
+              var yourname = document.getElementById("login").value
+             alert("Welcome" + " " + yourname +" to our store. Wish you have a nice day!")
+          }
+          function change1(){
+            var a=document.getElementById("table_login1").style.display = "none";
+            var c= document.getElementById("arrow_left").style.right = "180px";
+          }
+          function change2(){
+            var b=document.getElementById("table_login1").style.display = "block";
+            var c= document.getElementById("arrow_left").style.right = "240px";
+          }
+          function xuat(){
+            var c= document.getElementById("open").style.display = "block";
+            var c= document.getElementById("arrow_right").style.display = "none";
+            var c= document.getElementById("arrow_left").style.display = "block";
+            var c= document.getElementById("arrow_left").style.right = "175px";
+          }
+          function xuat1(){
+            var c= document.getElementById("open").style.display = "none";
+            var c= document.getElementById("arrow_left").style.display = "none";
+            var c= document.getElementById("arrow_right").style.display = "block";
+            var a=document.getElementById("table_login1").style.display = "none";
+          }
       </script>
  </head>
 
@@ -194,5 +219,24 @@
         </div>
    </div>
    <p id="end">&#169; 2021 Apple, KĐ, Boly Apple store </p>
+<!-----POPUP----->
+<div class="trai"><img id="arrow_right" src="images/arrow_right.png" width="40px" onclick="xuat()"/></div>
+<div ><img id="arrow_left" src="images/arrow_left.png" width=40px" onclick="xuat1()"/></div>
+<!--popup-->
+<div class="popup">
+   <div id="popup">
+      <div class="table_login" id="table_login1">
+         <h1>welcome</h1>
+         <div>
+            <p ><input id="login" type="text"  placeholder="enter your name"/> </p>
+            <p ><input id="enter" type="button" onclick="enter()" value="enter"/> </p>
+         </div>
+         
+         <div class="close1" ><a id="close" href="#" onclick="change1()"> Close</a></div>
+         
+      </div>
+      <div class="close1" ><a id="open" href="#" onclick="change2()"> Open form</a></div>
+   </div>
+</div>
  </body>
 </html> 

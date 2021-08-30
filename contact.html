@@ -13,7 +13,26 @@
       <link rel="stylesheet" href="contact.css"/>
       <script src="jquery-3.6.0.min.js"></script>
       <script>
-          var index=1;
+          $(document).ready(function() {
+            $("#arrow").hide()
+
+            $(window).scroll(function(){
+             if ($(this).scrollTop()>=100)
+                 $("#arrow").show("slow")
+             else
+                 $("#arrow").hide()
+            })
+            $("#arrow").click(function(){
+                  $("html, body").animate({
+                   "scrollTop": "0"
+                  },3000);
+               })
+            $(".learn_more").click(function(){
+               event.preventDefault()
+               alert("Thank you for your interest!")
+            })
+         })
+         var index=1;
         changeImage= function(){
             var imgs= ["hello_images/image1.png","hello_images/image2.png","hello_images/image3.png",
             "hello_images/image4.png","hello_images/image5.png","hello_images/image6.png",
@@ -25,38 +44,43 @@
             }
         }
         setInterval(changeImage,700);
-         $(document).ready(function(){
-            $(".learn_more").click(function(){
-               event.preventDefault()
-               alert("Thank you for your interest!")
-            })
-         })
+        
+          function repear(){
+            var b=document.getElementById("menu_main1").style.display = "block";
+          }
+          function repear1(){
+            var b=document.getElementById("menu_main1").style.display = "none";
+          }
       </script>
  </head>
  
  <body>
-   <div class="logo_menu">
-      <div><img id="logo_main" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
-      <div>
-         <ul class="menu_main">
-            <li><a href="https://hkhang096.github.io/it02/index.html">Home</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="https://hkhang096.github.io/it02/contact.html">Contact</a></li>
-         </ul>
-      </div>
+  <!--Menu_main-->
+  <div class="logo_menu">
+   <div><img id="logo_main" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
+   <div>
+      <ul class="menu_main" id="menu_main1">
+         <li><a href="https://hkhang096.github.io/it02/">Home</a></li>
+         <li><a href="#">Product</a></li>
+         <li><a href="https://hkhang096.github.io/it02/contact.html">Contact</a></li>
+      </ul>
    </div>
-     <div id="slogan">
-        <div class="photos">
-           <img id="photo" onclick="changeImage()" src="hello_images/image1.png">
-        </div>
+   <div class="menu_icon"><img id="menu_icon" src="images/menu_icon.png" width="50px" ondblclick="repear1()" onclick="repear()" alt="icon"/></div>
+</div>
+<!-------------->
 
-        <div class="slogan">
-        <h1>BoLy's Apple Store</h1>
-        <p>If you don't have an iPhone, well, you don't have an iPhone.</p>
-  </div>
+<div id="slogan">
+   <div class="photos">
+      <img id="photo" onclick="changeImage()" src="hello_images/image1.png">
+   </div>
+
+   <div class="slogan">
+   <h1>BoLy's Apple Store</h1>
+   <p>If you don't have an iPhone, well, you don't have an iPhone.</p>
+</div>
 </div>
 
-<!--Contact-->
+<!--contact-->
 <div class="information" >
    <div id="contact">
      <h2 >Boly's Apple</h2>
@@ -88,5 +112,6 @@
    </div>
 </div>
 <p id="end">&#169; 2021 Apple, KĐ, Boly Apple store </p>
+
  </body>
 </html>

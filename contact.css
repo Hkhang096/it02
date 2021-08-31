@@ -10,7 +10,6 @@ a:hover{
     width: 100%;
     height:600px;
 }
-
 /*------menu main-----*/
 
     .logo_menu{
@@ -75,39 +74,6 @@ a:hover{
     font-size: 20px;
     color: darkorange;
 }
-
-/*------something------*/
-
-    .something{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    .something >div{
-        width: 49%;
-    }
-    .something >div >img{
-        width: 100%;
-    }
-    .product1{
-        background-color: black;
-        color: white;
-        text-align: center;
-        width: 49%;
-        margin: 5px;
-    }
-    .product{
-        text-align: center;
-        width: 49%;
-    }
-    .something h1{
-        font-size: 50px;
-    }
-    .something a{
-        margin-left: 10px;
-        text-decoration: none;
-    }
-
 
 /*-------Contact------*/
 
@@ -211,35 +177,50 @@ a:hover{
             width: 25px;
         }
 
-        .logo_menu >div{
+        .logo_menu{
+            display: inherit;
             width: 100%;
+        }
+        .logo_menu >div{
+           width: 15%;
         }
         .menu_icon {
             display: block;
             position: absolute;
-            margin-top: 16px;
-            margin-left: 90%;
+            top: 0;
+            right: 0;
+            z-index: 99999;
         }
-        #menu_main1{
-            position: absolute;
+        #menu_main1{ 
             display: none;
-            left: 0;
-            background-color: rgb(14, 9, 61);
-            width: 93%;
-            top: 50px;
-
-        }
-        #menu_main1 >li >a{
-            text-align: left;
-        }  
-        #menu_main1 >li >a:hover{
-            background-color: rgb(64, 143, 218);
-        }
-        .menu_icon img:hover{
-            border: 2px double black;
+            justify-content: center;
         }
         
+        #menu_main1 >li> a{
+            display: block;
+            margin-left:10rem;
+            justify-content: center;
+        }
+        #menu_main1 >li> a:hover{
+            display: block;
+            
+        }
+        .menu_icon >img:hover{
+            border: 1px solid black;
+        }
     }  
-
-
+    @media screen and (max-width: 400px){
+        #menu_main1 >li> a{
+            display: block;
+            margin-left:6rem;
+            justify-content: center;
+        }
+    }
     
+    @media screen and (max-width: 500px){
+        #menu_main1 >li> a{
+            display: block;
+            margin-left:8rem;
+            justify-content: center;
+        }
+    }

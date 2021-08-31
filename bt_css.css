@@ -28,6 +28,11 @@ a:hover{
     padding: 5px 10px;
     border-radius: 10px;
 }
+
+.logo_menu2{
+display: none;
+}
+
 /*------menu main-----*/
 
     .logo_menu{
@@ -64,10 +69,11 @@ a:hover{
     .menu_main >li >a:hover{
         color: white;
     }
-    .menu_icon {
+   /* .menu_icon {
       display: none;
       margin-top: 20px;
     }
+    */
 /*--------------------*/
 
 #slogan{
@@ -273,55 +279,54 @@ a:hover{
             width: 25px;
         }
 
+        #logo2{
+            margin-top: 5px;
+            margin-left: 10px;
+        }
         .logo_menu{
-            display: inherit;
+            display: none;
+        }
+        .logo_menu2{
+            display: block;
+            background-image:linear-gradient(0,white,rgb(12, 12, 12));
+            z-index: 9999;
+            position: sticky;
+            top: 0;
             width: 100%;
         }
-        .logo_menu >div{
-           width: 15%;
-        }
-        .menu_icon {
-            display: block;
+        .menu_icon2{
             position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 99999;
-        }
-        #menu_main1{ 
-            display: none;
-            justify-content: center;
-        }
-        
-        #menu_main1 >li> a{
-            display: block;
-            margin-left:10rem;
-            justify-content: center;
-        }
-        #menu_main1 >li> a:hover{
-            display: block;
+            top: 10px;
+            right: 5px;
             
         }
-        .menu_icon >img:hover{
+        .menu_icon2 >img:hover{
             border: 1px solid black;
         }
-    }  
-    @media screen and (max-width: 400px){
-        #menu_main1 >li> a{
+        .menu_main2{
+            
+            list-style-type: none;
+            width: 100%;
+            margin-left: -40px;
+            margin-bottom: 0;
+        }
+        #menu_main2{
+            display: none;
+        }
+        .menu_main2>li>a{
+            text-decoration: none;
             display: block;
-            margin-left:6rem;
-            justify-content: center;
+            text-align: center;
+            padding: 15px ;
+            border-bottom: 1px solid white;
+        }
+        .menu_main2>li>a:hover{
+            background-image:linear-gradient(0,red,rgb(15, 15, 15));
+            color: white;
         }
     }
-    
-    @media screen and (max-width: 500px){
-        #menu_main1 >li> a{
-            display: block;
-            margin-left:8rem;
-            justify-content: center;
-        }
-    }
-/*-- POPUP--*/
 
+/*-- POPUP--*/
     #arrow_right{
         position: absolute;
         bottom: 50%;

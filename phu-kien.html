@@ -13,49 +13,7 @@
       <link rel="stylesheet" href="bt_css.css" />
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <script src="jquery-3.6.0.min.js"></script>
-      <script>
-      
-        function enter(){
-            var a=document.getElementById("table_login1").style.display = "none";
-            var c= document.getElementById("arrow_right").style.display = "block";
-              var yourname = document.getElementById("login").value
-              alert("Welcome" + " " + yourname +" to our store. Wish you have a nice day!")
-          }
-          function change1(){
-            var a=document.getElementById("table_login1").style.display = "none";
-            var c= document.getElementById("arrow_right").style.display = "block";
-          }
-          function xuat(){
-            var c= document.getElementById("arrow_right").style.display = "none";
-            var b=document.getElementById("table_login1").style.display = "block";
-          }
-         
-          function repear(){
-            var b=document.getElementById("menu_main2").style.display = "block";
-          }
-          function repear1(){
-            var b=document.getElementById("menu_main2").style.display = "none";
-          }
-          $(document).ready(function() {
-            $("#arrow").hide()
-
-            $(window).scroll(function(){
-             if ($(this).scrollTop()>=100)
-                 $("#arrow").show("slow")
-             else
-                 $("#arrow").hide()
-            })
-            $("#arrow").click(function(){
-                  $("html, body").animate({
-                   "scrollTop": "0"
-                  },3000);
-               })
-            $(".learn_more").click(function(){
-               event.preventDefault()
-               alert("Thank you for your interest!")
-            })
-         })
-      </script>
+      <script src="script.js"></script>
  </head>
 
  <body>
@@ -138,7 +96,7 @@
     <div class="products">
       <div class="product-item">
         <div class="product-top">
-          <a href="#">
+          <a class="learn_more" href="#">
             <div class="flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -162,7 +120,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -186,7 +144,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -209,7 +167,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -233,7 +191,7 @@
     
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -256,7 +214,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -279,7 +237,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -302,7 +260,7 @@
 
     <div class="product-item">
       <div class="product-top">
-        <a href="#">
+        <a class="learn_more" href="#">
           <div class="flip-box">
             <div class="flip-box-inner">
               <div class="flip-box-front">
@@ -325,7 +283,7 @@
 
       <div class="product-item">
         <div class="product-top">
-          <a href="#">
+          <a class="learn_more" href="#">
             <div class="flip-box">
               <div class="flip-box-inner">
                 <div class="flip-box-front">
@@ -348,7 +306,7 @@
 
         <div class="product-item">
           <div class="product-top">
-            <a href="#">
+            <a class="learn_more" href="#">
               <div class="flip-box">
                 <div class="flip-box-inner">
                   <div class="flip-box-front">
@@ -385,9 +343,9 @@
     </div>
     <div id="support">
       <h3 class="title_infomation">Hỗ Trợ</h3>
-      <a style="color:blue" ; href="#"> Hướng dẫn đặt hàng</a></br>
+      <a class="learn_more" style="color:blue" ; href="#"> Hướng dẫn đặt hàng</a></br>
       <p></p>
-      <a style="color:blue" ; href="#"> Hình thức thanh toán</a></br>
+      <a class="learn_more" style="color:blue" ; href="#"> Hình thức thanh toán</a></br>
     </div>
     <div id="time">
       <h2></h2>

@@ -11,28 +11,11 @@
       <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="bt_css.css" />
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <script src="jquery-3.6.0.min.js"></script>
       <script>
-         $(document).ready(function() {
-            $("#arrow").hide()
-
-            $(window).scroll(function(){
-             if ($(this).scrollTop()>=100)
-                 $("#arrow").show("slow")
-             else
-                 $("#arrow").hide()
-            })
-            $("#arrow").click(function(){
-                  $("html, body").animate({
-                   "scrollTop": "0"
-                  },3000);
-               })
-            $(".learn_more").click(function(){
-               event.preventDefault()
-               alert("Thank you for your interest!")
-            })
-         })
-         var index=1;
+      
+      var index=1;
         changeImage= function(){
             var imgs= ["hello_images/image1.png","hello_images/image2.png","hello_images/image3.png",
             "hello_images/image4.png","hello_images/image5.png","hello_images/image6.png",
@@ -66,6 +49,25 @@
           function repear1(){
             var b=document.getElementById("menu_main2").style.display = "none";
           }
+          $(document).ready(function() {
+            $("#arrow").hide()
+
+            $(window).scroll(function(){
+             if ($(this).scrollTop()>=100)
+                 $("#arrow").show("slow")
+             else
+                 $("#arrow").hide()
+            })
+            $("#arrow").click(function(){
+                  $("html, body").animate({
+                   "scrollTop": "0"
+                  },3000);
+               })
+            $(".learn_more").click(function(){
+               event.preventDefault()
+               alert("Thank you for your interest!")
+            })
+         })
       </script>
  </head>
 
@@ -79,9 +81,11 @@
          <div><img id="logo_main" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
          <div>
             <ul class="menu_main" id="menu_main1">
-               <li><a  href="https://hkhang096.github.io/it02/">Home</a></li>
-               <li><a  href="#">Product</a></li>
-               <li><a  href="https://hkhang096.github.io/it02/contact.html">Contact</a></li>
+               <li><a  href="index.html">Home</a></li>
+               <li><a  href="iPhone.html">Product</a></li>
+               <li><a  href="contact.html">Contact</a></li>
+               <li><a href="#"><i class="fas fa-search"></i></a></li>
+
             </ul>
          </div>
          <!--<div class="menu_icon"><img id="menu_icon" src="images/menu_icon.png" width="50px" ondblclick="repear1()" onclick="repear()" alt="icon"/></div>-->
@@ -93,9 +97,11 @@
    <div><img id="logo2" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
    <div>
       <ul class="menu_main2" id="menu_main2">
-         <li><a  href="https://hkhang096.github.io/it02/">Home</a></li>
-         <li><a  href="#">Product</a></li>
-         <li><a  href="https://hkhang096.github.io/it02/contact.html">Contact</a></li>
+         <li><a  href="index.html">Home</a></li>
+         <li><a  href="iPhone.html">Product</a></li>
+         <li><a  href="contact.html">Contact</a></li>
+         <li><a href="#"><i class="fas fa-search"></i></a></li>
+
       </ul>
    </div>   
       <div class="menu_icon2"><img id="menu_icon2" src="images/menu_icon.png" width="50px"  ondblclick="repear1()" onclick="repear()"  alt="icon2"/></div>
@@ -126,7 +132,7 @@
         <p class="text_p">Buy directly from Apple with special carrier offers</p>
         <div id="buyId">
             <p><a class="learn_more" href="#">Learn more ></a></p> 
-            <p><a href="#">Buy ></a></p>
+            <p><a href="iPhone.html">Buy ></a></p>
         </div>
      </div>
    </div>
@@ -136,7 +142,7 @@
         <h3>iPhone 12 and iPhone 12 mini</h3>
         <h1>Blast past fast.</h1>
         <p>From $30.37/mo. for 24 mo. or $699 before trade‑in</p>
-        <a id="introduct_ip12_a" href="#">Buy</a></br>
+        <a id="introduct_ip12_a" href="iPhone.html">Buy</a></br>
         <p></p>
         <a class="learn_more" href="#">Learn on > </a>
      </div>
@@ -151,7 +157,7 @@
                     <h1>ipad Pro</h1>
                     <h2>Supercharged by the Apple M1 chip</h2>
                     <a class="learn_more" href="#">learn more ></a>
-                    <a href="#">Buy ></a>
+                    <a href="ipad">Buy ></a>
                 </div>
              <img src="images/ipad pro-PhotoRoom.png" alt="ipad"/>
           </div>
@@ -160,7 +166,7 @@
                     <h1>iMac</h1>
                     <h2>Say Hello</h2>
                     <a class="learn_more" href="#">learn more ></a>
-                    <a href="#">Buy ></a>
+                    <a href="Mac.html">Buy ></a>
                 </div>
              <img src="images/imac_2-PhotoRoom.png" alt="imac"/>
           </div>
@@ -170,7 +176,7 @@
                     <p style="color: red;">Series 6</p>
                     <h2>The future of health is on your wrist</h2>
                     <a class="learn_more" href="#">learn more ></a>
-                    <a href="#">Buy ></a>
+                    <a href="apple-watch.html">Buy ></a>
                 </div>
              <img src="images/watch-PhotoRoom.png" alt="watch"/>
           </div>
@@ -180,7 +186,7 @@
                     <h2>The first fitness service powered by Apple Watch</h2>
                     <h2>Try it for 1 month free</h2>
                     <a class="learn_more" href="#">learn more ></a>
-                    <a href="#">Buy ></a>
+                    <a href="iPhone.html">Buy ></a>
                 </div>
              <img src="images/fitness-PhotoRoom.png" alt="fitness"/>
           </div>
@@ -196,7 +202,7 @@
                     <h1>Card</h1>
                     <h2>Get up to 3% Daily Cash back with every purchase</h2>
                     <a class="learn_more" href="#">learn more ></a>
-                    <a href="#">Buy ></a>
+                    <a href="phu-kien.html">Buy ></a>
               </div>
              <img src="images/card-PhotoRoom .png" alt="card"/>
           </div>
@@ -234,6 +240,7 @@
         </div>
    </div>
    <p id="end">&#169; 2021 Apple, KĐ, Boly Apple store </p>
+
 <!-----POPUP----->
    <div id="puppop1">
       <div class="trai"><img id="arrow_right" src="images/arrow_right.png" width="40px" onclick="xuat()"/></div>
@@ -243,9 +250,7 @@
             <p ><input id="login" type="text"  placeholder="enter your name"/> </p>
             <p ><input id="enter" type="button" onclick="enter()" value="enter"/> </p>
          </div>
-         
          <div class="close1" ><a id="close" href="#" onclick="change1()"> Close</a></div>
-         
       </div>
    </div>
  </body>

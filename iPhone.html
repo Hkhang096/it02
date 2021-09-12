@@ -28,7 +28,7 @@
                <li><a  href="index.html">Home</a></li>
                <li><a  href="iPhone.html">Product</a></li>
                <li><a  href="contact.html">Contact</a></li>
-               <li><a href="#"><i class="fas fa-search"></i></a></li>
+               <li><a href="#"><i class="fas fa-search" onclick="search()"></i></a></li>
 
             </ul>
          </div>
@@ -44,7 +44,7 @@
          <li><a  href="index.html">Home</a></li>
          <li><a  href="iPhone.html">Product</a></li>
          <li><a  href="contact.html">Contact</a></li>
-         <li><a href="#"><i class="fas fa-search"></i></a></li>
+         <li><a href="#"><i class="fas fa-search" onclick="search()"></i></a></li>
 
       </ul>
    </div>   
@@ -320,5 +320,17 @@
         </div>
    </div>
    <p id="end">&#169; 2021 Apple, KĐ, Boly Apple store </p>
+
+   <div id="search">
+    <div class="sub-sreach">
+       <h1 id="change-search">What are you looking for?</h1>
+       <p>
+          <input type="text" placeholder="Search" height="200px" width="100px" />
+          <img src="https://cdn3.iconfinder.com/data/icons/block/32/search-512.png"/ width="50px">
+       </p>
+       <img id="logo-search" src="images/tao_2.png"  />
+       <img id="logo-x" src="images/chu_x.png" onclick="unsub()"  />
+    </div>
+ </div>
  </body>
 </html> 

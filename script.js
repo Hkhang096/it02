@@ -51,3 +51,9 @@ var index=1;
                alert("Thank you for your interest!")
             })
          })
+         function search(){
+          var sub= document.getElementById("search").style.display = "block";
+        }
+        function unsub(){
+          var unsub= document.getElementById("search").style.display = "none";
+        }

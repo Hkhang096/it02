@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
       <script src="jquery-3.6.0.min.js"></script>
       <script src="script.js"></script>
+
  </head>
 
  <body>
@@ -29,7 +30,7 @@
                <li><a  href="index.html">Home</a></li>
                <li><a  href="iPhone.html">Product</a></li>
                <li><a  href="contact.html">Contact</a></li>
-               <li><a href="#"><i class="fas fa-search"></i></a></li>
+               <li><a href="#"><i class="fas fa-search" onclick="search()" ></i></a></li>
 
             </ul>
          </div>
@@ -45,8 +46,7 @@
          <li><a  href="index.html">Home</a></li>
          <li><a  href="iPhone.html">Product</a></li>
          <li><a  href="contact.html">Contact</a></li>
-         <li><a href="#"><i class="fas fa-search"></i></a></li>
-
+         <li><a  href="#"><i class="fas fa-search" onclick="search()" ></i></a></li>
       </ul>
    </div>   
       <div class="menu_icon2"><img id="menu_icon2" src="images/menu_icon.png" width="50px"  ondblclick="repear1()" onclick="repear()"  alt="icon2"/></div>
@@ -196,6 +196,18 @@
             <p ><input id="enter" type="button" onclick="enter()" value="enter"/> </p>
          </div>
          <div class="close1" ><a id="close" href="#" onclick="change1()"> Close</a></div>
+      </div>
+   </div>
+
+   <div id="search">
+      <div class="sub-sreach">
+         <h1 id="change-search">What are you looking for?</h1>
+         <p>
+            <input type="text" placeholder="Search" height="200px" width="100px" />
+            <img src="https://cdn3.iconfinder.com/data/icons/block/32/search-512.png"/ width="50px">
+         </p>
+         <img id="logo-search" src="images/tao_2.png"  />
+         <img id="logo-x" src="images/chu_x.png" onclick="unsub()"  />
       </div>
    </div>
  </body>

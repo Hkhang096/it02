@@ -3,7 +3,7 @@ var index=1;
             var imgs= ["hello_images/image1.png","hello_images/image2.png","hello_images/image3.png",
             "hello_images/image4.png","hello_images/image5.png","hello_images/image6.png",
             "hello_images/image7.png","hello_images/image8.png","hello_images/image9.png"];
-            document.getElementById('photo').src = imgs[index];
+            document.getElementById("photo").src = imgs[index];
             index++;
             if(index==9){
                 index=0;
@@ -57,3 +57,32 @@ var index=1;
         function unsub(){
           var unsub= document.getElementById("search").style.display = "none";
         }
+
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

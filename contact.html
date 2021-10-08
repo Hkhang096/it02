@@ -12,52 +12,17 @@
         content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="bt_css.css"/>
       <script src="jquery-3.6.0.min.js"></script>
-      <script>
-          $(document).ready(function() {
-            $("#arrow").hide()
-
-            $(window).scroll(function(){
-             if ($(this).scrollTop()>=100)
-                 $("#arrow").show("slow")
-             else
-                 $("#arrow").hide()
-            })
-            $("#arrow").click(function(){
-                  $("html, body").animate({
-                   "scrollTop": "0"
-                  },3000);
-               })
-            $(".learn_more").click(function(){
-               event.preventDefault()
-               alert("Thank you for your interest!")
-            })
-         })
-         var index=1;
-        changeImage= function(){
-            var imgs= ["hello_images/image1.png","hello_images/image2.png","hello_images/image3.png",
-            "hello_images/image4.png","hello_images/image5.png","hello_images/image6.png",
-            "hello_images/image7.png","hello_images/image8.png","hello_images/image9.png"];
-            document.getElementById('photo').src = imgs[index];
-            index++;
-            if(index==9){
-                index=0;
-            }
-        }
-        setInterval(changeImage,700);
-        
-          function repear(){
-            var b=document.getElementById("menu_main2").style.display = "block";
-          }
-          function repear1(){
-            var b=document.getElementById("menu_main2").style.display = "none";
-          }
-      </script>
+      <script src="script.js"></script>
  </head>
  
  <body>
   <!--Menu_main-->
   <div class="logo_menu">
-   <div><img id="logo_main" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
+      <div>
+         <a href="index.html">
+            <img id="logo_main" src="images/Apple-Logo.gif" width="50px" alt="logo"/>
+         </a>
+      </div>
    <div>
       <ul class="menu_main" id="menu_main1">
          <li><a  href="index.html">Home</a></li>
@@ -71,7 +36,11 @@
 
 <!--Menu_main-->
 <div class="logo_menu2">
-<div><img id="logo2" src="images/Apple-Logo.gif" width="50px" alt="logo"/></div>
+   <div>
+      <a href="index.html">
+         <img id="logo2" src="images/Apple-Logo.gif" width="50px" alt="logo"/>
+      </a>
+   </div>
 <div>
 <ul class="menu_main2" id="menu_main2">
    <li><a  href="index.html">Home</a></li>
